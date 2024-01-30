@@ -141,14 +141,19 @@
     justify-content: start;
   }
 }
+/*!===== 740 =====*/
+@media (width <= 740px) {
+  .dbl-1 {
+    display: none;
+  }
+  .dbl-2 {
+    display: block;
+  }
+}
 /*!===== 680 =====*/
 @media (width <= 680px) {
   .grid-four-cols {
     grid-template-columns: 1fr;
-  }
-
-  .slider-container {
-    height: calc(80vh - 8rem);
   }
 
   .franchises-container::after,

@@ -14,14 +14,7 @@ anchors.forEach(function (value) {
     header.classList.remove("show");
   });
 });
-//? gettin navbar-list and function below is also correct it's your choice which one you want to use to hide header
-// var links = document.querySelectorAll(".navbar-links");
-//todo array forEach method to hide navbar
-// links.forEach(function (value) {
-//  value.addEventListener("click", function () {
-//    header.classList.remove("show");
-//  });
-// });
+
 //!============ apni slider functionality  ============
 // slides = document.querySelector(".slides");
 
@@ -38,18 +31,18 @@ anchors.forEach(function (value) {
 // setInterval(mover, 3000);
 //!============ chat gpt se lya huwa code ============
 
-slides = document.querySelector(".slides");
+let webSlides = document.querySelector(".web-slides");
 
 var counter = 0;
 var direction = 1; // 1 for forward, -1 for backward
 
-function mover() {
-  slides.style.transform = `translate(${counter * -100}%)`;
+function webMover() {
+  webSlides.style.transform = `translate(${counter * -100}%)`;
   counter += direction;
   //* console.log(counter * -100);
 
   //* Check if the slider is at the beginning or end
-  if (counter === slides.children.length - 1) {
+  if (counter === webSlides.children.length - 1) {
     //* Reverse the direction
     direction = -1;
   } else if (counter === 0) {
@@ -57,9 +50,28 @@ function mover() {
     direction = 1;
   }
 }
+setInterval(webMover, 3000);
 
-setInterval(mover, 3000);
+let mobSlides = document.querySelector(".mob-slides");
 
+var counter = 0;
+var direction = 1; // 1 for forward, -1 for backward
+
+function mobMover() {
+  mobSlides.style.transform = `translate(${counter * -100}%)`;
+  counter += direction;
+  //* console.log(counter * -100);
+
+  //* Check if the slider is at the beginning or end
+  if (counter === mobSlides.children.length - 1) {
+    //* Reverse the direction
+    direction = -1;
+  } else if (counter === 0) {
+    //* Forward the direction
+    direction = 1;
+  }
+}
+setInterval(mobMover, 3000);
 //!============ footer responsive btns ============
 
 var footerContent = document.querySelector(".footer-content");

@@ -1,0 +1,333 @@
+/*!==== 1200 px =====*/
+@media (width <= 1200px) {
+  .header {
+    padding: 0rem 6rem;
+  }
+}
+
+/*!===== 1130 =====*/
+@media (width <= 1130px) {
+  html {
+    font-size: 52.5%;
+  }
+  .header {
+    padding: 0rem 5rem;
+    justify-content: space-between;
+  }
+
+  .header .logo {
+    width: 15rem;
+  }
+  .header .nav-btns {
+    margin: 0;
+  }
+  .header .nav-btns .btn:first-child {
+    display: none;
+  }
+
+  .header .nav-btns .btn:nth-child(2) {
+    width: 17rem;
+    display: none;
+  }
+  .header .nav-btns .btn:nth-child(3) {
+    display: block;
+  }
+
+  .header .navbar-links {
+    position: absolute;
+    top: 8rem;
+    left: -100%;
+    height: calc(100vh - 8rem);
+    width: 30%;
+    background-color: var(--bg-color-2);
+    color: #fff;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    z-index: 1;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .show .navbar-links {
+    left: 0%;
+    opacity: 1;
+  }
+
+  .header .navbar-links a {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    padding-block: 1rem;
+  }
+
+  .header .navbar-links a:hover {
+    background-color: var(--bg-color-1);
+    color: #fff;
+  }
+
+  .responsive-btns,
+  .responsive-btns :is(#menu-btn) {
+    display: block;
+  }
+
+  .show .responsive-btns #menu-btn {
+    display: none;
+  }
+
+  .show .responsive-btns #cancel-btn {
+    display: block;
+  }
+
+  .franchises-container::after,
+  .express-container::after,
+  .footer-container::after {
+    width: 20rem;
+    height: 35rem;
+  }
+
+  .footer-container::after {
+    top: 30rem;
+  }
+}
+/*!===== 980 =====*/
+@media (width <= 980px) {
+  .grid-four-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .header .navbar-links {
+    width: 40%;
+  }
+}
+/*!===== 900 =====*/
+@media (width <= 900px) {
+  .grid-three-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-welcome-heading,
+  :is(
+      .franchises-main-heading,
+      .express-main-heading,
+      .village-main-heading,
+      .opening-main-heading,
+      .social-main-heading
+    )
+    h2 {
+    font-size: 4rem;
+  }
+
+  .logo-txt {
+    font-size: 4rem;
+  }
+}
+
+/*!===== 760 =====*/
+@media (width <= 760px) {
+  .grid-four-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header .navbar-links a {
+    font-size: 2rem;
+  }
+
+  .app-stores {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: start;
+  }
+}
+/*!===== 680 =====*/
+@media (width <= 680px) {
+  .grid-four-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .slider-container {
+    height: calc(80vh - 8rem);
+  }
+
+  .franchises-container::after,
+  .express-container::after,
+  .footer-container::after {
+    width: 10rem;
+    height: 25rem;
+  }
+
+  .footer-container::after {
+    top: 30rem;
+  }
+  .header .logo {
+    width: 12rem;
+    height: auto;
+  }
+
+  .header .responsive-btns :is(#menu-btn, #cancel-btn) {
+    font-size: 2rem;
+  }
+
+  .header .navbar-links {
+    width: 50%;
+  }
+
+  .header .nav-btns .btn:nth-child(3) {
+    width: 12rem;
+  }
+
+  .header .nav-btns .btn:nth-child(2) {
+    font-size: 1.4rem;
+    width: 15rem;
+  }
+  .grid-three-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid-two-cols {
+    grid-template-columns: 1fr;
+  }
+  .franchises-content .grid:nth-of-type(3) {
+    display: none;
+  }
+
+  .franchises-content .grid:nth-of-type(4),
+  .village-item {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .village-item {
+    align-items: center;
+  }
+  .village-item,
+  .village-item ul li {
+    text-align: center;
+  }
+
+  .footer .footer-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer ul li {
+    text-align: center;
+  }
+
+  .footer-heading {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2rem;
+  }
+
+  .footer-heading .plus-icon {
+    font-size: 2rem;
+  }
+
+  .footer-content ul li {
+    font-size: 1.6rem;
+  }
+
+  .footer-list ul {
+    display: none;
+  }
+
+  .show-one .footer-col:nth-of-type(2) .footer-list ul {
+    display: block;
+  }
+  .show-one .footer-col:nth-of-type(2) .footer-heading #cancel-btn {
+    display: block;
+  }
+  .show-one .footer-col:nth-of-type(2) .footer-heading .fa-plus {
+    display: none;
+  }
+  .show-two .footer-col:nth-of-type(3) .footer-list ul {
+    display: block;
+  }
+  .show-two .footer-col:nth-of-type(3) .footer-heading #cancel-btn {
+    display: block;
+  }
+  .show-two .footer-col:nth-of-type(3) .footer-heading .fa-plus {
+    display: none;
+  }
+}
+
+/*!===== 600 =====*/
+@media (width <= 600px) {
+  html {
+    font-size: 42.5%;
+  }
+
+  .franchises-content .grid:nth-of-type(2) {
+    margin-top: 15rem;
+  }
+
+  /*todo======== btns starting ========*/
+  :is(.franchises-item, .express-item) .main-btn {
+    width: 20rem;
+    height: 6rem;
+  }
+
+  .header .nav-btns .btn:nth-child(1):hover,
+  .welcome-btn:hover {
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 1);
+  }
+
+  .header .nav-btns .btn:nth-child(3) {
+    display: block;
+    width: 17rem;
+  }
+
+  .card-item .btn {
+    width: 17rem;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .village-item .main-btn {
+    width: 19rem;
+  }
+
+  /*todo======== btns ending ========*/
+
+  .main-welcome-heading,
+  :is(
+      .franchises-main-heading,
+      .express-main-heading,
+      .village-main-heading,
+      .opening-main-heading,
+      .social-main-heading
+    )
+    h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  .welcome-cards {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .card-item {
+    flex: 1 1 25rem;
+  }
+}
+/*!===== 570 =====*/
+@media (width <= 570px) {
+  .header .navbar-links {
+    width: 100%;
+  }
+
+  .header .navbar-links a {
+    font-size: 3rem;
+  }
+  .header .nav-btns .btn:nth-child(3) {
+    width: 15rem;
+  }
+}

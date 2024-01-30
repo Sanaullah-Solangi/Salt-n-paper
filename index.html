@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--!===== font awesome cdn =====-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--!===== google font link =====-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--!===== favIcon link  =====-->
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favIcon.webp"
+      type="image/x-icon"
+    />
+
+    <!--!===== css style sheets  =====-->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <title>Replica Salt'n Papper</title>
+  </head>
+  <body>
+    <!--!===== header section starts =====-->
+    <header class="header d-flex">
+      <!--todo=== reponsive btns ===-->
+      <div class="responsive-btns">
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+        <i class="fa-solid fa-xmark" id="cancel-btn"></i>
+      </div>
+
+      <!--todo=== logo ===-->
+      <div class="logo h-100">
+        <img
+          width="100%"
+          class="h-100"
+          src="./assets/images/logo.webp"
+          alt="salt'n papper logo"
+          title="Salt'n papper"
+        />
+      </div>
+
+      <!--todo=== navbar ===-->
+      <nav class="navbar d-flex">
+        <div class="navbar-links d-flex txt-cap">
+          <a href="#home">home</a>
+          <a href="#">about us</a>
+          <a href="#">publications</a>
+          <a href="#">feedback</a>
+        </div>
+        <!--todo=== navbar btns ===-->
+        <div class="nav-btns d-flex">
+          <button class="btn txt-cap">get a franchise</button>
+          <button class="btn main-btn txt-cap d-flex">
+            order online <i class="d-flex fa-solid fa-arrow-right"></i>
+          </button>
+          <button class="d-none btn main-btn txt-cap d-flex">
+            order online
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!--!===== slider section starts =====-->
+    <section id="home" class="slider-container">
+      <div class="slides">
+        <!--todo=== slider one ===-->
+        <img
+          src="./assets/images/slider-1.webp"
+          width="100%"
+          height="100%"
+          alt=""
+        />
+
+        <!--todo=== slider two ===-->
+        <img
+          src="./assets/images/slider-2.webp"
+          width="100%"
+          height="100%"
+          alt=""
+        />
+
+        <!--todo=== slider three ===-->
+        <img
+          src="./assets/images/slider-3.webp"
+          width="100%"
+          height="100%"
+          alt=""
+        />
+
+        <!--todo=== slider four ===-->
+        <img
+          src="./assets/images/slider-4.webp"
+          width="100%"
+          height="100%"
+          alt=""
+        />
+      </div>
+    </section>
+    <!--!===== welcome section starts =====-->
+    <main class="welcome section">
+      <div class="welcom-container">
+        <div class="welcome-content d-flex dir-col">
+          <h1 class="main-welcome-heading txt-center">
+            Welcome to <span class="logo-txt">Salt'n Pepper</span>
+            <br />
+            Restaurants! Our Brands
+          </h1>
+          <p class="txt-center">
+            Please click our brands below for further information, reservations
+            or to order online!
+          </p>
+          <div class="welcome-cards d-flex">
+            <!--todo=== card one ===-->
+            <div class="card-item d-flex dir-col">
+              <a href="#">
+                <img
+                  src="./assets/images/welcome-1.webp"
+                  alt="welcome image one"
+                />
+              </a>
+              <button class="btn welcome-btn txt-cap">order now</button>
+            </div>
+
+            <!--todo=== card two ===-->
+            <div class="card-item d-flex dir-col">
+              <a href="#">
+                <img
+                  src="./assets/images/welcome-2.webp"
+                  alt="welcome image one"
+                />
+              </a>
+              <button class="btn welcome-btn txt-cap">order now</button>
+            </div>
+
+            <!--todo=== card three ===-->
+            <div class="card-item d-flex dir-col">
+              <a href="#">
+                <img
+                  src="./assets/images/welcome-3.webp"
+                  alt="welcome image one"
+                />
+              </a>
+              <button class="btn welcome-btn txt-cap">order now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--!===== franchises section starts =====-->
+    <section class="franchises section">
+      <div class="franchises-container p-relative">
+        <div class="franchises-content p-relative txt-center">
+          <!--todo=== franchises main heading ===-->
+          <div class="franchises-main-heading txt-cap">
+            <h2>
+              <span class="logo-txt">salt'n papper</span>
+              <br />
+              restaurant franchiese
+            </h2>
+          </div>
+          <p>
+            Each of our franchises are individually managed. For further
+            details, kindly contact them directly.
+          </p>
+          <!--todo=== item one ===-->
+          <div class="grid grid-two-cols">
+            <!--?=== left side ===-->
+            <div class="franchises-item d-flex dir-col">
+              <span class="tag txt-up">islamabad</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n paper</span> Restaurant
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> Plot# 55, Shabbir
+                  Plaza, Blue Area, F-6, Islamabad
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 051-2604904-6</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <!--?=== right side ===-->
+            <div class="franchises-img">
+              <img
+                src="./assets/images/franchis-1.webp"
+                alt="franchiese num one"
+              />
+            </div>
+          </div>
+          <!--todo=== item two ===-->
+          <div class="grid grid-two-cols">
+            <!--?=== left side ===-->
+            <div class="franchises-img">
+              <img
+                src="./assets/images/franchis-2.webp"
+                alt="franchiese num one"
+              />
+            </div>
+
+            <!--?=== right side ===-->
+            <div class="franchises-item d-flex dir-col">
+              <span class="tag txt-up">faisalabad</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n paper</span> Restaurant
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> 4-Kohinoor City,
+                  Faisalabad
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: Ph: 041-8711404</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <!--todo=== responsive item two ===-->
+          <div class="grid grid-two-cols">
+            <!--?=== left side ===-->
+            <div class="franchises-item d-flex dir-col">
+              <span class="tag txt-up">faisalabad</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n paper</span> Restaurant
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> 4-Kohinoor City,
+                  Faisalabad
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: Ph: 041-8711404</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <!--?=== right side ===-->
+            <div class="franchises-img">
+              <img
+                src="./assets/images/franchis-2.webp"
+                alt="franchiese num one"
+              />
+            </div>
+          </div>
+
+          <!--todo=== item three ===-->
+          <div class="grid grid-two-cols">
+            <!--?=== left side ===-->
+            <div class="franchises-item d-flex dir-col">
+              <span class="tag txt-up">bahawalpur</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n paper</span> Restaurant
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> D.C Chowk, opposite
+                  Commissioner House, Bahawalpur
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 062-2740271-2</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <!--?=== right side ===-->
+            <div class="franchises-img">
+              <img
+                src="./assets/images/franchis-3.webp"
+                alt="franchiese num one"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--!===== express franchises section starts =====-->
+    <section class="express section">
+      <div class="express-container p-relative">
+        <div class="express-content p-relative txt-center">
+          <!--todo=== express main heading ===-->
+          <div class="express-main-heading txt-cap">
+            <h2>
+              <span class="logo-txt">salt'n papper</span><br />
+              express franchises
+            </h2>
+          </div>
+
+          <!--todo=== express items ===-->
+          <div class="grid grid-three-cols">
+            <!--?=== item one ===-->
+            <div class="express-item d-flex dir-col txt-center">
+              <div class="express-img">
+                <img src="./assets/images/franchis-4.webp" alt="" />
+              </div>
+              <span class="tag txt-up">package mall</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n papper</span> express
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                  Mall
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 0333-0310534</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <!--?=== item two ===-->
+            <div class="express-item d-flex dir-col txt-center">
+              <div class="express-img">
+                <img src="./assets/images/franchis-5.webp" alt="" />
+              </div>
+              <span class="tag txt-up">package mall</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n papper</span> express
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                  Mall
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 0333-0310534</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <!--?=== item three ===-->
+            <div class="express-item d-flex dir-col txt-center">
+              <div class="express-img">
+                <img src="./assets/images/franchis-6.webp" alt="" />
+              </div>
+              <span class="tag txt-up">package mall</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n papper</span> express
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                  Mall
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 0333-0310534</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <!--?=== item four ===-->
+            <div class="express-item d-flex dir-col txt-center">
+              <div class="express-img">
+                <img src="./assets/images/franchis-7.webp" alt="" />
+              </div>
+              <span class="tag txt-up">package mall</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n papper</span> express
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                  Mall
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 0333-0310534</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <!--?=== item five ===-->
+            <div class="express-item d-flex dir-col txt-center">
+              <div class="express-img">
+                <img src="./assets/images/franchis-8.webp" alt="" />
+              </div>
+              <span class="tag txt-up">package mall</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n papper</span> express
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                  Mall
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 0333-0310534</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <!--?=== item six ===-->
+            <div class="express-item d-flex dir-col txt-center">
+              <div class="express-img">
+                <img src="./assets/images/franchis-9.webp" alt="" />
+              </div>
+              <span class="tag txt-up">package mall</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n papper</span> express
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                  Mall
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 0333-0310534</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <!--?=== item seven ===-->
+            <div class="express-item d-flex dir-col txt-center">
+              <div class="express-img">
+                <img src="./assets/images/franchis-10.webp" alt="" />
+              </div>
+              <span class="tag txt-up">package mall</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n papper</span> express
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                  Mall
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 0333-0310534</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <!--?=== item eight ===-->
+            <div class="express-item d-flex dir-col txt-center">
+              <div class="express-img">
+                <img src="./assets/images/franchis-11.webp" alt="" />
+              </div>
+              <span class="tag txt-up">package mall</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n papper</span> express
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                  Mall
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 0333-0310534</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <!--?=== item nine ===-->
+            <div class="express-item d-flex dir-col txt-center">
+              <div class="express-img">
+                <img src="./assets/images/franchis-12.webp" alt="" />
+              </div>
+              <span class="tag txt-up">package mall</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n papper</span> express
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> First Floor Packages
+                  Mall
+                </li>
+                <li><i class="fa-solid fa-phone"></i> Ph: 0333-0310534</li>
+              </ul>
+              <button class="btn main-btn d-flex welcome-btn txt-cap">
+                get girection <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--!===== village franchises section starts =====-->
+    <section class="village section">
+      <div class="village-container">
+        <div class="village-content txt-center">
+          <!--todo=== village main heading ===-->
+          <di class="village-main-heading txt-cap">
+            <h2>
+              <span class="logo-txt">salt'n papper</span><br />
+              village franchise
+            </h2>
+          </di>
+          <!--todo=== item one ===-->
+          <div class="grid grid-two-cols">
+            <!--?=== left side ===-->
+            <div class="village-img">
+              <img src="./assets/images/franchis-13.webp" alt="" />
+            </div>
+            <!--?=== right side ===-->
+            <div class="village-item d-flex dir-col">
+              <span class="tag txt-up">gujranwala</span>
+              <p class="txt-cap">
+                <span class="logo-txt">salt'n papper</span> village
+              </p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> Adjacent to Rida
+                  Marquees /DHA Main Gate, GT Road Gujranwala Cantt
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i> Ph: 055-3884500 l
+                  ,055-3880400
+                </li>
+              </ul>
+              <button class="btn main-btn txt-cap d-flex">
+                get direction <i class="d-flex fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--!===== opening franchises section starts =====-->
+    <section class="opening section">
+      <div class="opening-container">
+        <div class="opening-content txt-center">
+          <!--todo=== opening main heading ===-->
+          <div class="opening-main-heading txt-cap">
+            <h2>
+              <span class="logo-txt">salt'n papper</span><br />
+              Express Franchises
+              <span classopening-="opening">(Opening Soon) </span>
+            </h2>
+          </div>
+          <div class="grid grid-three-cols">
+            <!--todo=== item one ===-->
+            <div class="opening-item d-flex dir-col">
+              <img src="./assets/images/location.webp" alt="" />
+              <span class="opening-tag txt-up">opening soon</span>
+              <p class="txt-cap">
+                salt'n papper<span class="txt-cap"> express</span>
+              </p>
+              <span class="txt-cap">Al-jalil Garden</span>
+              <span class="txt-cap">sadhoke</span>
+            </div>
+
+            <!--todo=== item two ===-->
+            <div class="opening-item d-flex dir-col">
+              <img src="./assets/images/location.webp" alt="" />
+              <span class="opening-tag txt-up">opening soon</span>
+              <p class="txt-cap">
+                salt'n papper<span class="txt-cap"> express</span>
+              </p>
+              <span class="txt-cap">Al-jalil Garden</span>
+              <span class="txt-cap">sadhoke</span>
+            </div>
+
+            <!--todo=== item three ===-->
+            <div class="opening-item d-flex dir-col">
+              <img src="./assets/images/location.webp" alt="" />
+              <span class="opening-tag txt-up">opening soon</span>
+              <p class="txt-cap">
+                salt'n papper<span class="txt-cap"> express</span>
+              </p>
+              <span class="txt-cap">Al-jalil Garden</span>
+              <span class="txt-cap">sadhoke</span>
+            </div>
+
+            <!--todo=== item four ===-->
+            <div class="opening-item d-flex dir-col">
+              <img src="./assets/images/location.webp" alt="" />
+              <span class="opening-tag txt-up">opening soon</span>
+              <p class="txt-cap">
+                salt'n papper<span class="txt-cap"> express</span>
+              </p>
+              <span class="txt-cap">Al-jalil Garden</span>
+              <span class="txt-cap">sadhoke</span>
+            </div>
+
+            <!--todo=== item five ===-->
+            <div class="opening-item d-flex dir-col">
+              <img src="./assets/images/location.webp" alt="" />
+              <span class="opening-tag txt-up">opening soon</span>
+              <p class="txt-cap">
+                salt'n papper<span class="txt-cap"> express</span>
+              </p>
+              <span class="txt-cap">Al-jalil Garden</span>
+              <span class="txt-cap">sadhoke</span>
+            </div>
+
+            <!--todo=== item six ===-->
+            <div class="opening-item d-flex dir-col">
+              <img src="./assets/images/location.webp" alt="" />
+              <span class="opening-tag txt-up">opening soon</span>
+              <p class="txt-cap">
+                salt'n papper<span class="txt-cap"> express</span>
+              </p>
+              <span class="txt-cap">Al-jalil Garden</span>
+              <span class="txt-cap">sadhoke</span>
+            </div>
+
+            <!--todo=== item seven ===-->
+            <div class="opening-item d-flex dir-col">
+              <img src="./assets/images/location.webp" alt="" />
+              <span class="opening-tag txt-up">opening soon</span>
+              <p class="txt-cap">
+                salt'n papper<span class="txt-cap"> express</span>
+              </p>
+              <span class="txt-cap">Al-jalil Garden</span>
+              <span class="txt-cap">sadhoke</span>
+            </div>
+
+            <!--todo=== item eight ===-->
+            <div class="opening-item d-flex dir-col">
+              <img src="./assets/images/location.webp" alt="" />
+              <span class="opening-tag txt-up">opening soon</span>
+              <p class="txt-cap">
+                salt'n papper<span class="txt-cap"> express</span>
+              </p>
+              <span class="txt-cap">Al-jalil Garden</span>
+              <span class="txt-cap">sadhoke</span>
+            </div>
+
+            <!--todo=== item nine ===-->
+            <div class="opening-item d-flex dir-col">
+              <img src="./assets/images/location.webp" alt="" />
+              <span class="opening-tag txt-up">opening soon</span>
+              <p class="txt-cap">
+                salt'n papper<span class="txt-cap"> express</span>
+              </p>
+              <span class="txt-cap">Al-jalil Garden</span>
+              <span class="txt-cap">sadhoke</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--!===== social feeds section starts =====-->
+    <section class="social section">
+      <div class="social-container">
+        <div class="social-content txt-center">
+          <!--todo=== social main heading ===-->
+          <div class="social-main-heading txt-cap">
+            <h2>social feed</h2>
+          </div>
+
+          <!--todo=== social feed items  ===-->
+          <div class="items-container">
+            <div class="social-items">
+              <img src="./assets/images/feed-1.webp" alt="" />
+              <img src="./assets/images/feed-2.webp" alt="" />
+              <img src="./assets/images/feed-3.webp" alt="" />
+              <img src="./assets/images/feed-4.webp" alt="" />
+              <img src="./assets/images/feed-5.webp" alt="" />
+              <img src="./assets/images/feed-6.webp" alt="" />
+              <img src="./assets/images/feed-7.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--!===== footer section starts =====-->
+    <footer class="footer section">
+      <div class="footer-container p-relative">
+        <div class="footer-content">
+          <div class="grid grid-four-cols">
+            <!--todo=== footer col one ===-->
+            <div class="footer-col">
+              <div class="logo">
+                <img src="./assets/images/logo.webp" alt="" />
+              </div>
+              <p>
+                The Salt’n Pepper Restaurants are an example of gracious
+                dinning, outstanding service, extraordinary classic and
+                contemporary cuisine. The restaurants have become the ultimate
+                dinning destinations in Lahore. From family occasions to
+                business dinner and moments of the heart, this place is where
+                unforgettable memories are made.
+              </p>
+              <div class="terms d-flex">
+                <span class="txt-cap">terms & conditions</span>
+                <span class="txt-cap">privacy policy</span>
+              </div>
+            </div>
+
+            <!--todo=== footer col two ===-->
+            <div class="footer-col">
+              <!--*========= footer heading =========-->
+              <div class="footer-heading d-flex">
+                <!--?=== heading txt ===-->
+                <span class="footer-col-heading txt-cap">site links</span>
+                <!--?=== plus icon ===-->
+                <div class="plus-icon-1 plus-icon">
+                  <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-xmark" id="cancel-btn"></i>
+                </div>
+              </div>
+              <div class="footer-list">
+                <ul class="txt-cap">
+                  <li>home</li>
+                  <li>about us</li>
+                  <li>publications</li>
+                  <li>get a franchise</li>
+                  <li>feedback</li>
+                </ul>
+              </div>
+            </div>
+
+            <!--todo=== footer col three ===-->
+            <div class="footer-col">
+              <!--*========= footer heading =========-->
+              <div class="footer-heading d-flex">
+                <!--?=== heading txt ===-->
+                <span class="footer-col-heading txt-cap">contact us</span>
+                <!--?=== plus icon ===-->
+                <div class="plus-icon-2 plus-icon">
+                  <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-xmark" id="cancel-btn"></i>
+                </div>
+              </div>
+              <div class="footer-list">
+                <ul>
+                  <li>+92 42 358 509 31 (Head Office)</li>
+                  <li>+92 42 358 509 30 (Head Office)</li>
+                  <li>+92 42 111 100 678 (Delivery)</li>
+                  <li>+92 03 111 444 610 (Delivery)</li>
+                  <li>snpfood@brain.net.pk</li>
+                  <li>
+                    23-Usman Block, New <br />
+                    GardenTown, Lahore, Pakistan
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--todo=== footer col 4 ===-->
+            <div class="footer-col">
+              <span class="footer-col-heading txt-cap">folow us</span>
+              <div class="links">
+                <a href="#" class="d-flex"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="d-flex"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="d-flex"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+              <div class="app-stores d-flex dir-col">
+                <img src="./assets/images/app-store.webp" alt="" />
+                <img src="./assets/images/google-play.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--!===== footer last section starts =====-->
+    <!--todo=== copyright ===-->
+    <div class="copyright p-relative">
+      <p class="txt-cap">&copy; 2034 Muhammad Sanaullah</p>
+      <p class="txt-cap">powered by tossdown.com</p>
+      <div class="drop-up p-absolute d-flex">
+        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+      </div>
+    </div>
+    <!--!===== script link =====-->
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

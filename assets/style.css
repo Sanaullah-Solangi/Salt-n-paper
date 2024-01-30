@@ -340,10 +340,10 @@ ul li i {
   background-color: white;
   padding: 2rem 1rem;
   border-radius: 0.5rem;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
 .card-item a img {

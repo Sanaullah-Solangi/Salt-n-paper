@@ -143,11 +143,11 @@
 }
 /*!===== 740 =====*/
 @media (width <= 740px) {
-  .dbl-1 {
-    display: none;
+  .web-slider {
+    display: none !important;
   }
-  .dbl-2 {
-    display: block;
+  .mob-slider {
+    display: block !important;
   }
 }
 /*!===== 680 =====*/

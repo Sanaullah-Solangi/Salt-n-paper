@@ -31,47 +31,82 @@ anchors.forEach(function (value) {
 // setInterval(mover, 3000);
 //!============ chat gpt se lya huwa code ============
 
-let webSlides = document.querySelector(".web-slides");
+// let webSlides = document.querySelector(".web-slides");
 
-var counter = 0;
-var direction = 1; // 1 for forward, -1 for backward
+// var counter = 0;
+// var direction = 1; // 1 for forward, -1 for backward
 
-function webMover() {
-  webSlides.style.transform = `translate(${counter * -100}%)`;
-  counter += direction;
-  //* console.log(counter * -100);
+// function webMover() {
+//   webSlides.style.transform = `translate(${counter * -100}%)`;
+//   counter += direction;
+//   //* console.log(counter * -100);
 
-  //* Check if the slider is at the beginning or end
-  if (counter === webSlides.children.length - 1) {
-    //* Reverse the direction
-    direction = -1;
-  } else if (counter === 0) {
-    //* Forward the direction
-    direction = 1;
-  }
-}
-setInterval(webMover, 3000);
+//   //* Check if the slider is at the beginning or end
+//   if (counter === webSlides.children.length - 1) {
+//     //* Reverse the direction
+//     direction = -1;
+//   } else if (counter === 0) {
+//     //* Forward the direction
+//     direction = 1;
+//   }
+// }
+// setInterval(webMover, 3000);
 
-let mobSlides = document.querySelector(".mob-slides");
+// let mobSlides = document.querySelector(".mob-slides");
 
-var counter = 0;
-var direction = 1; // 1 for forward, -1 for backward
+// var counter = 0;
+// var direction = 1; // 1 for forward, -1 for backward
 
-function mobMover() {
-  mobSlides.style.transform = `translate(${counter * -100}%)`;
-  counter += direction;
-  //* console.log(counter * -100);
+// function mobMover() {
+//   mobSlides.style.transform = `translate(${counter * -100}%)`;
+//   counter += direction;
+//   //* console.log(counter * -100);
 
-  //* Check if the slider is at the beginning or end
-  if (counter === mobSlides.children.length - 1) {
-    //* Reverse the direction
-    direction = -1;
-  } else if (counter === 0) {
-    //* Forward the direction
-    direction = 1;
-  }
-}
-setInterval(mobMover, 3000);
+//   //* Check if the slider is at the beginning or end
+//   if (counter === mobSlides.children.length - 1) {
+//     //* Reverse the direction
+//     direction = -1;
+//   } else if (counter === 0) {
+//     //* Forward the direction
+//     direction = 1;
+//   }
+// }
+// setInterval(mobMover, 3000);
+
+var swiper = new Swiper(".mySwiper-1", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".mySwiper-2", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 //!============ footer responsive btns ============
 
 var footerContent = document.querySelector(".footer-content");

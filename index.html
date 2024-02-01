@@ -31,6 +31,12 @@
     <!--!===== css style sheets  =====-->
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./assets/responsive.css" />
+    <!--!===== swiper slider link  =====-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>Replica Salt'n Papper</title>
   </head>
   <body>
@@ -74,84 +80,86 @@
       </nav>
     </header>
     <!--!===== slider section starts =====-->
-    <section id="home" class="slider-container dbl-1">
-      <div class="web-slides">
-        <!--todo=== slider one ===-->
-        <img
-          class="slide-1"
-          src="./assets/images/slider-1.webp"
-          width="100%"
-          height="100%"
-          alt=""
-        />
-
-        <!--todo=== slider two ===-->
-        <img
-          class="slide-2"
-          src="./assets/images/slider-2.webp"
-          width="100%"
-          height="100%"
-          alt=""
-        />
-
-        <!--todo=== slider three ===-->
-        <img
-          class="slide-3"
-          src="./assets/images/slider-3.webp"
-          width="100%"
-          height="100%"
-          alt=""
-        />
-
-        <!--todo=== slider four ===-->
-        <img
-          class="slide-4"
-          src="./assets/images/slider-4.webp"
-          width="100%"
-          height="100%"
-          alt=""
-        />
+    <div class="swiper mySwiper-1 web-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/slider-1.webp"
+            alt="this is slide number 1"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/slider-2.webp"
+            alt="this is slide number 2"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/slider-3.webp"
+            alt="this is slide number 3"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/slider-4.webp"
+            alt="this is slide number 4"
+            width="100%"
+            height="100%"
+          />
+        </div>
       </div>
-    </section>
-    <section id="home" class="slider-container dbl-2 d-none">
-      <div class="mob-slides">
-        <!--todo=== slider one ===-->
-        <img
-          class="slide-1"
-          src="./assets/images/responsive-1.webp"
-          width="100%"
-          height="100%"
-          alt=""
-        />
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-        <!--todo=== slider two ===-->
-        <img
-          class="slide-2"
-          src="./assets/images/responsive-2.webp"
-          width="100%"
-          height="100%"
-          alt=""
-        />
-
-        <!--todo=== slider three ===-->
-        <img
-          class="slide-3"
-          src="./assets/images/responsive-3.webp"
-          width="100%"
-          height="100%"
-          alt=""
-        />
-
-        <!--todo=== slider four ===-->
-        <img
-          class="slide-4"
-          src="./assets/images/responsive-4.webp"
-          width="100%"
-          height="100%"
-          alt=""
-        />
+    <div class="swiper mySwiper-2 mob-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/responsive-1.webp"
+            alt="this is slide number 1"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/responsive-2.webp"
+            alt="this is slide number 2"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/responsive-3.webp"
+            alt="this is slide number 3"
+            width="100%"
+            height="100%"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./assets/images/responsive-4.webp"
+            alt="this is slide number 4"
+            width="100%"
+            height="100%"
+          />
+        </div>
       </div>
-    </section>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
     <!--!===== welcome section starts =====-->
     <main class="welcome section">
       <div class="welcom-container">
@@ -826,7 +834,7 @@
       </div>
     </div>
     <!--!===== script link =====-->
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/app.js"></script>
   </body>
 </html>
